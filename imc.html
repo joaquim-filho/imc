@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Condicional</title>
+</head>
+
+<body>
+    <span id="resultado">resultado</span>
+    <script>
+
+        //let idade = Number(prompt("Digite sua idade: "));
+        let peso = Number(prompt("Digite seu peso: "));
+        let altura = Number(prompt("Digite sua altura: "))/100;
+        let imc = peso/(altura*altura);
+
+        if (imc < 20 ) {
+            document.getElementById('resultado').innerText = `Seu IMC é ${imc} você está ABAIXO DO PESO`;
+        }
+
+        if (imc >= 20 && imc < 25 ) {
+            document.getElementById('resultado').innerText = `Seu IMC é ${imc} você está com PESO NORMAL`;
+        }
+        if (imc >= 25 && imc < 30 ) {
+            document.getElementById('resultado').innerText = `Seu IMC é ${imc} você está com SOBRE PESO`;
+        }
+        if (imc >= 30 && imc < 40 ) {
+            document.getElementById('resultado').innerText = `Seu IMC é ${imc} você está OBESO`;
+        }
+        if (imc >= 40  ) {
+            document.getElementById('resultado').innerText = `Seu IMC é ${imc} você é OBESO MÓRBIDO`;
+        }
+
+
+
+
+
+
+
+
+
+
+        /*
+        let n1 = Number(prompt("Digite a primeira nota: "));
+        let n2 = Number(prompt("Digite a segunda nota: "));
+        let n3 = Number(prompt("Digite a terceira nota: "));
+
+        let media = (n1 + n2 + n3) / 3
+
+        if (media >= 7) {
+            document.getElementById('resultado').innerText = `Sua Média é ${media} Aprovado`;
+        }
+        else {
+            document.getElementById('resultado').innerText = `Sua Média é ${media} Reprovado`;
+        }
+        */
+
+
+
+
+
+
+        /*
+        let ano_nascimento = Number(prompt("Qual seu ano de nascimento ? :"));
+        if (ano_nascimento <= 2004) {
+            document.getElementById('resultado').innerText = "Você é Maior de Idade";
+        }
+        else{
+            document.getElementById('resultado').innerText = "Você é Menor de Idade";
+        }
+        */
+
+
+
+
+        /*let idade = Number(prompt("Digite sua idade: "));
+ 
+         if (idade >= 18) {
+             document.getElementById('resultado').innerText = "Maior de Idade";
+         }
+         else {
+             document.getElementById('resultado').innerText = "Menor de Idade";
+         }
+     */</script>
+</body>
+
+</html>
